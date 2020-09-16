@@ -97,6 +97,9 @@
 /* Environment */
 #define CONFIG_SYS_LOAD_ADDR		0x1000000
 
+#define CONFIG_BOOTCOUNT_ENV
+#define CONFIG_BOOTCOUNT_LIMIT
+
 /* Shell */
 
 /* ATAGs support for bootm/bootz */
@@ -106,9 +109,9 @@
 
 /* Environment */
 #define ENV_DEVICE_SETTINGS \
-	"stdin=serial,usbkbd\0" \
-	"stdout=serial,vidconsole\0" \
-	"stderr=serial,vidconsole\0"
+	"stdin=serial\0" \
+	"stdout=serial\0" \
+	"stderr=serial\0"
 
 #ifdef CONFIG_ARM64
 #define FDT_HIGH "ffffffffffffffff"
