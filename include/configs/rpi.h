@@ -168,6 +168,9 @@
 	"fdt_addr_r=0x02600000\0" \
 	"ramdisk_addr_r=0x02700000\0"
 
+/* #define CONFIG_BOOTCOUNT_ENV */
+/* #define CONFIG_BOOTCOUNT_LIMIT */
+
 #if CONFIG_IS_ENABLED(CMD_MMC)
 	#define BOOT_TARGET_MMC(func) \
 		func(MMC, mmc, 0) \
